@@ -1,0 +1,31 @@
+/* Global Variables */
+root{
+    --heading-font: 'Wendy One';
+    --paragraph: 'Poppins';
+}
+
+/* Testing */
+
+.test{
+    border: 1px solid black;
+    background-color: rgba(0,0,0, 0.1);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+}
+
+h1, h2, h3
+{
+    font-family: 'Wendy One', serif;
+}
+
+nav a{
+    font-family: 'Wendy One', serif;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+
+
