@@ -21,36 +21,95 @@
   <body>
     
     <!-- Full Length container -->
-    <div class="container-sm px-0 test">
+    <div id="site-container" class="container-lg px-0 test">
 
         <!-- Navigation and Logo -->
-        <header  class="container-sm test">
-            Navigation and Logo
+        <header  class="test">
+          
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+              <!-- Logo/home link -->
+              <a class="navbar-brand" aria-current="page" href="#" ><img src="images/feral_logo.svg"></a>
+              
+              <!-- Nav bar toggler (mobile/tablet) -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navigation Links -->
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-around">
+
+                  <!-- About -->
+                  <li class="nav-item">
+                    <a class="nav-link"  href="#">About</a>
+                  </li>
+
+                  <!-- Programming drop down -->
+                  <li class="nav-item dropdown d-flex">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Programming
+                    </a>
+                    <ul class="dropdown-menu m-0 pt-0" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">GoH</a></li>
+                      <li><a class="dropdown-item" href="#">Activities</a></li>
+                      <li><a class="dropdown-item" href="#">Events</a></li>
+                      <li><a class="dropdown-item" href="#">Workshops</a></li>
+                      <li><a class="dropdown-item" href="#">Dance</a></li>
+                      <li><a class="dropdown-item" href="#">Trading Post</a></li>
+                    </ul>
+                  </li>
+                  
+                  <!-- Registration -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Registration</a>
+                  </li>
+
+                  <!-- Volunteer -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Volunteer</a>
+                  </li>
+
+                  <!-- FAQ -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                  </li>
+
+                  <!-- Contact -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  
+                  <!-- Archives -->
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Archives</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
         </header>
 
         <!-- Main Section -->
-        <main class="container-sm px-0 test">
+        <main class="test">
 
-            <!-- Content Container -->
-            <article class="container-sm px-0 test">
-
-              <div class="container-sm test">
+              <!-- Content container -->
+              <div class="test container-fluid">
                 <h1>title</h1>  
                 <p>Lorem ispsum</p>
               </div>
 
-              <section class="container-sm px-0 test">
-                <div class="container-sm test">
+              <!-- Section container -->
+              <section class="test container-fluid">
                   <h2>title</h2>  
                   <p>Lorem ispsum</p>
-                </div>
               </section>
-
-            </article>
 
         </main>
 
-        <footer class="container-sm test" >
+        <footer class="test container-fluid" >
             social media links
         </footer>
     </div>
