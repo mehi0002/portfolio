@@ -23,7 +23,7 @@ h1, h2, h3
     font-family: 'Wendy One', serif;
 }
 
-nav a{
+nav a, .btn{
     font-family: 'Wendy One', serif;
     text-transform: uppercase;
 }
@@ -68,6 +68,10 @@ ul.dropdown-menu{
 /* Line up sub menu items */
 a.dropdown-item{
     padding: 0.5rem 1rem;
+}
+
+.btn{
+    height:fit-content;
 }
 
 /****************************************************/
