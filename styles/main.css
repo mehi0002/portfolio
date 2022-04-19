@@ -32,6 +32,11 @@ nav .dropdown-toggle{
     height:fit-content;
 }
 
+.accent{
+    font-family: 'Waiting for the Sunrise', serif;
+    font-size: 1.75rem;
+}
+
 
 /******************* Navigation Menu Bar ******************/
 
@@ -74,16 +79,97 @@ a.dropdown-item{
     height:fit-content;
 }
 
+/************* Social Media bar ****************/
+
+/* Social bar fixed container */
+footer aside{
+    max-width: 38rem;
+}
+
+/* SVG icons */
+.social{
+    display: inline-block;
+}
+
+/* Newsletter button text */
+#news::after{
+    content: 'F! news';
+}
+
+/* Follow Us! */
+footer aside .accent{
+    display:none;
+}
+
 /****************************************************/
 /********************* Mobile ***********************/
 /****************************************************/
 
+@media screen and (max-width:26.875rem) {
+    
+    /* Newsletter button */
+    #news{
+        font-size: 0.75em;
+    }
+
+    /* Social Media Icons */
+    .social{
+        width: 2rem;
+    }
+
+}
+
+@media screen and (min-width:26.875rem) {
+    
+    /* Social Media Bar */
+    .social{
+        width: 3rem;
+    }
+}
 
 /****************************************************/
 /********************* Tablet ***********************/
 /****************************************************/
 
+@media screen and (min-width: 36rem){
+    
+    /* Giving the tablet a little side peak of the background image */
+    #site-container{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        width: calc(100% - 2rem);
+    }
+}
+
+@media screen and (min-width: 48rem){
+    
+    /* Social Media Bar */
+    #news::after{
+        content: 'Feral! Newsletter';
+    }
+
+    
+}
+
 
 /****************************************************/
 /********************* Desktop ***********************/
 /****************************************************/
+
+@media screen and (min-width: 62rem){
+    
+    /* Back to a centered container */
+    #site-container{
+        margin: auto;
+    }
+    
+    /* Social Media Bar */
+    footer aside .accent{
+        display:inline-block;
+    }
+}
+
+@media screen and (min-width: 75rem){
+   
+}
+
