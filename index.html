@@ -19,7 +19,8 @@
     <title>Camp Feral!</title>
   </head>
   <body>
-    
+   
+  <div id= "full-page-bg">
     <!-- Full Length container -->
     <div id="site-container" class="container-lg px-0 test">
 
@@ -27,7 +28,7 @@
         <!-- Navigation and Logo -->
         <header  class="test">
           
-          <nav class="navbar navbar-expand-lg nav-pills navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg nav-pills navbar-light">
             <div class="container-fluid">
 
               <!-- Logo/home link -->
@@ -94,21 +95,26 @@
         </header>
 
         <!---------------- Main Section --------------------->
-        <main>
+        <main class="m-3">
+
+          <!-- Party Invite -->
+          <div class="content-container d-flex flex-row p-4 theme theme-bg text-start rounded">
             
-              <div class="content-container d-flex flex-row p-4 theme theme-bg text-start rounded">
-                  <div class="d-flex flex-column">
-                    <p class="text-center">Camp Feral! invites you to...</p>
-                    <h1 class="text-center mb-4">Pawnee's Super Soft Sweet Sixteen</h1>  
-                    <h2 class="text-center mb-4"><span class="d-block">Aug 25-30 2022</span><span class="d-block">Algonquin Park</span></h2>
-                    <h3 class="text-center mb-4"><span class="d-block">With Guests of Honour</span> <span class="d-block">Adler & Blazen</span></h3>
-                    <button class="btn theme theme-bg rounded-pill mb-4 w-50 text-center">RSVP!</button>
-                  </div>
-                  <div id="pawnee" class="">
-                    <img src="images/425h/pawnee_transparent.png">
-                  </div>
-                </div>
-              </div>
+            <!-- Text -->
+            <div class="d-flex flex-column">
+              <p class="text-center">Camp Feral! invites you to...</p>
+              <h1 class="text-center mb-4">Pawnee's Super Soft Sweet Sixteen</h1>  
+              <h2 class="text-center mb-4"><span class="d-block">Aug 25-30 2022</span><span class="d-block">Algonquin Park</span></h2>
+              <h3 class="text-center mb-4"><span class="d-block">With Guests of Honour</span> <span class="d-block">Adler & Blazen</span></h3>
+              <button class="btn theme theme-bg rounded-pill mb-4 w-50 text-center">RSVP!</button>
+            </div>
+
+            <!-- Pawnee -->
+            <div id="pawnee" class="">
+              <img src="images/425h/pawnee_transparent.png">
+            </div>
+
+          </div>
         </main>
       
         <!---------------------- Footer ------------------------>
@@ -185,7 +191,7 @@
 
     </div>
 
-
+  </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

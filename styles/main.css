@@ -7,14 +7,22 @@ root{
 /* Testing */
 
 .test{
-    border: 1px solid black;
-    background-color: rgba(0,0,0, 0.1);
+    /* border: 1px solid black;
+    background-color: rgba(0,0,0, 0.1); */
 }
 
 body{
     font-family: 'Poppins', sans-serif  !important;
     font-weight: medium  !important;
     color: rgba(56, 36, 0, 1) !important;
+    
+}
+
+#full-page-bg{
+    height: 100%;
+    background-image: url("../images/x3/home_theme_bg_mobile_x3.jpg") !important;
+    background-size:cover;
+    background-position: bottom;
 }
 
 /************** Fonts ********************/
@@ -245,6 +253,10 @@ footer aside .accent{
 /* 536px Breakpoint */
 @media screen and (min-width: 36rem){
     
+    #full-page-bg{
+        background-image: url("../images/x3/home_theme_bg_tablet_x3.jpg") !important;
+    }
+    
     /* Giving the tablet a little side peak of the background image */
     #site-container{
         margin-right: 1rem;
@@ -284,6 +296,10 @@ footer aside .accent{
 /****************************************************/
 
 @media screen and (min-width: 62rem){
+    
+    #full-page-bg{
+        background-image: url("../images/x3/home_theme_bg_desktop_x3.jpg") !important;
+    }
     
     /* Back to a centered container */
     #site-container{
