@@ -12,8 +12,9 @@ root{
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    font-weight: medium;
+    font-family: 'Poppins', sans-serif  !important;
+    font-weight: medium  !important;
+    color: rgba(56, 36, 0, 1) !important;
 }
 
 /********* Fonts **********/
@@ -41,7 +42,7 @@ nav .dropdown-toggle{
 /******************* Navigation Menu Bar ******************/
 
 /* svg logo */
-nav .navbar-brand{
+#logo{
     width: 5rem;
 }
 
@@ -51,6 +52,7 @@ ul.navbar-nav{
 }
 
 /******** Drop down ***********/
+
 /* no arrow */
 nav .dropdown-toggle::after{
     display: none;
@@ -67,7 +69,7 @@ li.dropdown{
 }
 
 ul.dropdown-menu{
-    height:fit-content
+    height:fit-content;
 }
 
 /* Line up sub menu items */
@@ -79,11 +81,39 @@ a.dropdown-item{
     height:fit-content;
 }
 
+/****** Navigation Link Styles ********/
+
+/* Link Colour */
+nav a, nav a:visited{
+    color: rgba(56, 36, 0, 1) !important;
+}
+
+/* Active link pill */
+nav a.active, nav a:hover{
+    color:#FFF9EB !important;
+    background-color: #382400 !important;
+}
+
+/* Disabled Nav links */
+nav a.disabled {
+    color: rgba(56, 36, 0, 0.5) !important;
+}
+
+/* Remove colours from home link */
+nav a.navbar-brand{
+    background: none !important;
+}
+
 /************* Social Media bar ****************/
 
-/* Social bar fixed container */
-footer aside{
+.section-container{
+    
+}
+
+/* Content fixed container */
+.content-container{
     max-width: 38rem;
+    margin: auto;
 }
 
 /* SVG icons */
@@ -91,14 +121,27 @@ footer aside{
     display: inline-block;
 }
 
-/* Newsletter button text */
+/* Follow Us! */
+footer aside .accent{
+    display:none;
+}
+
+/***** Newsletter Button *****/
 #news::after{
     content: 'F! news';
 }
 
-/* Follow Us! */
-footer aside .accent{
-    display:none;
+/* Outline */
+#news{
+    border-color: #382400;
+    color: #382400;
+    transition: 0.1 ease-in-out;
+}
+
+/* Filled Hover */
+#news:hover{
+    background-color: #382400;
+    color: #FFF9EB;
 }
 
 /****************************************************/
