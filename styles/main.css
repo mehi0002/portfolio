@@ -42,8 +42,8 @@ nav a, .btn{
 
 /* Content fixed container */
 .content-container{
-    max-width: 38rem;
-    margin: auto;
+    max-width: 38rem !important;
+    margin: auto !important;
 }
 
 /******** Colours ***********/
@@ -66,15 +66,52 @@ nav a, .btn{
 }
 
 /****** Themed Homepage Styles ********/
-.theme{
+.theme, .theme h1, .theme h2, .theme h3 {
     font-family: 'Gorditas', cursive;;
     color: #10677D !important;
 }
 
+.theme h1{
+    font-size: 2.5rem !important;
+}
+
+.theme h2{
+    font-size: 1.75rem;
+}
+
+.theme h3{
+    font-size: 1.25rem;
+}
+
+.theme p{
+    font-size: 18px;
+}
+
 .theme-bg{
     background-color:rgba(222, 235, 240, 0.8) !important;
-    border:#10677D
+    border:2px solid #10677D !important;
 }
+
+button.theme-bg{
+    align-self: center;
+}
+
+button.theme-bg:hover{
+    background-color: #10677D !important;
+    color: rgba(255, 249, 235, 1) !important;
+}
+
+/* Frame overhang */
+#pawnee img{
+    z-index: 2;
+    transform:  scale(1.2)
+                translatex(1.6rem);            
+}
+
+#pawnee{
+    display: none;
+}
+
 /******************* Navigation Menu Bar ******************/
 
 /* svg logo */
@@ -205,6 +242,7 @@ footer aside .accent{
 /********************* Tablet ***********************/
 /****************************************************/
 
+/* 536px Breakpoint */
 @media screen and (min-width: 36rem){
     
     /* Giving the tablet a little side peak of the background image */
@@ -212,6 +250,21 @@ footer aside .accent{
         margin-right: 1rem;
         margin-left: 1rem;
         width: calc(100% - 2rem);
+    }
+}
+
+/* 640px breakpoint */
+@media screen and (min-width: 40rem){
+    #pawnee{
+        display: inline-block;
+    }
+
+    .theme, .theme h1, .theme h2, .theme h3, .theme p{
+        text-align: start !important;
+    }
+
+    button.theme-bg{
+        align-self: flex-start;
     }
 }
 
