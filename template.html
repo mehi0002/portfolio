@@ -19,15 +19,17 @@
     <title>Camp Feral!</title>
   </head>
   <body>
-    
-    <!-- Full Length container -->
-    <div id="site-container" class="container-lg px-0 test">
+   
+  <div class="full-page-bg">
+
+    <!-- Full Height container -->
+    <div id="site-container" class="container-lg px-0 content-bg">
 
       <!------------------ Header ------------------------->
         <!-- Navigation and Logo -->
         <header  class="test">
           
-          <nav class="navbar navbar-expand-lg nav-pills navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg nav-pills navbar-light">
             <div class="container-fluid">
 
               <!-- Logo/home link -->
@@ -52,7 +54,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Programming
                     </a>
-                    <ul class="dropdown-menu m-0 pt-0" aria-labelledby="navbarDropdownMenuLink">
+                    <ul class="dropdown-menu content-bg m-0 pt-0" aria-labelledby="navbarDropdownMenuLink">
                       <li><a class="dropdown-item" href="#">GoH</a></li>
                       <li><a class="dropdown-item" href="#">Activities</a></li>
                       <li><a class="dropdown-item" href="#">Events</a></li>
@@ -94,21 +96,45 @@
         </header>
 
         <!---------------- Main Section --------------------->
-        <main class="">
+        <main class="content-bg">
 
-            <div class="test">
-              <div class="content-container p-3">
-                <h1>title</h1>  
-                <p>Lorem ispsum</p>
-              </div>
+          <div class="test">
+            <div class="content-container p-3">
+              <h1>title</h1>  
+              <p>Lorem ispsum</p>
+              <picture>
+                <!-- Stays same size for tablet/desktop. Hidden on mobile -->
+                <source srcset="
+                  images/x1/pawnee_transparent.png,
+                  images/x2/pawnee_transparent_x2.png 1.5x,
+                  images/x3/pawnee_transparent_x3.png 2x" 
+                  media="(min-width: 40rem)">
+
+                  <!-- Default image -->
+                  <img src="images/x1/pawnee_transparent.png" alt="Feral's mascot Pawnee">
+                </source>
+              </picture>
             </div>
+          </div>
 
-            <section class="test">
-              <div class="content-container p-3">
-                  <h2>title</h2>  
-                  <p>Lorem ispsum</p>
-              </div>
-            </section>
+          <section class="test highlight">
+            <div class="content-container p-3">
+                <h2>title</h2>  
+                <p>Lorem ispsum</p>
+                <picture>
+                  <!-- Stays same size for tablet/desktop. Hidden on mobile -->
+                  <source srcset="
+                    images/x1/pawnee_transparent.png,
+                    images/x2/pawnee_transparent_x2.png 1.5x,
+                    images/x3/pawnee_transparent_x3.png 2x" 
+                    media="(min-width: 40rem)">
+  
+                    <!-- Default image -->
+                    <img src="images/x1/pawnee_transparent.png" alt="Feral's mascot Pawnee">
+                  </source>
+                </picture>
+            </div>
+          </section>
 
         </main>
       
@@ -186,7 +212,7 @@
 
     </div>
 
-
+  </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
