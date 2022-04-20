@@ -21,7 +21,8 @@
   <body>
    
   <div id= "full-page-bg">
-    <!-- Full Length container -->
+
+    <!-- Full Height container -->
     <div id="site-container" class="container-lg px-0 test">
 
       <!------------------ Header ------------------------->
@@ -109,9 +110,22 @@
               <button class="btn theme theme-bg rounded-pill mb-4 w-50 text-center">RSVP!</button>
             </div>
 
-            <!-- Pawnee -->
-            <div id="pawnee" class="">
-              <img src="images/425h/pawnee_transparent.png">
+            <!-- Pawnee Image-->
+            <div id="pawnee">
+
+              <picture>
+                <!-- Stays same size for tablet/desktop. Hidden on mobile -->
+                <source srcset="
+                  images/x1/pawnee_transparent.png,
+                  images/x2/pawnee_transparent_x2.png 1.5x,
+                  images/x3/pawnee_transparent_x3.png 2x" 
+                  media="(min-width: 40rem)">
+
+                  <!-- Default image -->
+                  <img src="images/x1/pawnee_transparent.png" alt="Feral's mascot Pawnee">
+                </source>
+              </picture>
+
             </div>
 
           </div>
