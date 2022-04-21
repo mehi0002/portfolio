@@ -29,13 +29,27 @@ body{
     background-position: bottom;
     background-size: cover;
 }
+
+img{
+    border-radius: 3rem;
+}
 /************** Fonts ********************/
 
 /* Headings */
+
 h1, h2, h3
 {
     font-family: 'Wendy One', serif;
     text-align: center;
+}
+
+p{
+    font-size: 0.9em;
+}
+
+.p-header{
+    text-align: center;
+    font-weight:700;
 }
 
 /* Navigation Links */
@@ -54,8 +68,34 @@ nav a, .btn{
 
 /* Content fixed container */
 .content-container{
-    max-width: 38rem !important;
+    max-width: 55rem !important;
     margin: auto !important;
+}
+
+.re-arrange{
+    display:grid;
+    gap: 1rem;
+    grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd';
+}
+
+.re-arrange h2{
+    grid-area: a;
+}
+
+.re-arrange picture{
+    grid-area: b;
+}
+
+.re-arrange .p-header{
+    grid-area: c;
+}
+
+.re-arrange:nth-child(4){
+    grid-area: d;
 }
 
 /******** Colours ***********/
@@ -85,6 +125,7 @@ nav a, .btn{
 
 .theme h1{
     font-size: 2.5rem !important;
+    text-transform: none;
 }
 
 .theme h2{
@@ -228,7 +269,7 @@ footer aside .accent{
 /********************* Mobile ***********************/
 /****************************************************/
 
-@media screen and (max-width:26.875rem) {
+@media screen and (max-width:29rem) {
     
     /* Newsletter button */
     #news{
@@ -242,7 +283,7 @@ footer aside .accent{
 
 }
 
-@media screen and (min-width:26.875rem) {
+@media screen and (min-width:29rem) {
     
     /* Social Media Bar */
     .social{
@@ -271,9 +312,10 @@ footer aside .accent{
         margin-left: 1rem;
         width: calc(100% - 2rem);
     }
+
 }
 
-/* 640px breakpoint */
+/* 640px breakpoint - hide pawnee */
 @media screen and (min-width: 40rem){
     #pawnee{
         display: inline-block;
@@ -286,6 +328,13 @@ footer aside .accent{
     button.theme-bg{
         align-self: flex-start;
     }
+    
+    .re-arrange{
+        grid-template-areas:
+            'a a'
+            'c c'
+            'b d';
+    }
 }
 
 @media screen and (min-width: 48rem){
@@ -295,13 +344,26 @@ footer aside .accent{
         content: 'Feral! Newsletter';
     }
 
-    
 }
 
 
 /****************************************************/
 /********************* Desktop ***********************/
 /****************************************************/
+
+@media screen and (min-width: 55rem){
+        
+    .re-arrange{
+        grid-template-areas:
+            'a a'
+            'b c'
+            'b d';
+    }
+
+    .re-arrange .p-header{
+        text-align: start;
+    }
+}
 
 @media screen and (min-width: 62rem){
     
@@ -322,6 +384,7 @@ footer aside .accent{
     footer aside .accent{
         display:inline-block;
     }
+
 }
 
 @media screen and (min-width: 75rem){
