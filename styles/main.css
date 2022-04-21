@@ -13,7 +13,7 @@ root{
 
 body{
     font-family: 'Poppins', sans-serif  !important;
-    font-weight: medium  !important;
+    font-weight: 400  !important;
     color: rgba(56, 36, 0, 1) !important;   
 }
 
@@ -289,7 +289,7 @@ footer aside .accent{
 #news{
     border-color: #382400;
     color: #382400;
-    transition: 0.1 ease-in-out;
+    transition: background-color 0.1s ease-in-out;
 }
 
 /* Filled Hover */
