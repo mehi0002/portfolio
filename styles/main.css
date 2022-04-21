@@ -30,8 +30,9 @@ body{
     background-size: cover;
 }
 
-img{
+img.chonk{
     border-radius: 3rem;
+    min-width: 4rem;
 }
 /************** Fonts ********************/
 
@@ -72,9 +73,14 @@ nav a, .btn{
     margin: auto !important;
 }
 
+#invite{
+    max-width: 34rem !important;
+}
+
+/**** Left Float *****/
 .re-arrange{
     display:grid;
-    gap: 1rem;
+    gap: 1.5rem;
     grid-template-areas:
         'a'
         'b'
@@ -95,6 +101,33 @@ nav a, .btn{
 }
 
 .re-arrange:nth-child(4){
+    grid-area: d;
+}
+
+/**** Right Float *****/
+.re-arrange-rvs{
+    display:grid;
+    gap: 1.5rem;
+    grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd';
+}
+
+.re-arrange-rvs h2{
+    grid-area: a;
+}
+
+.re-arrange-rvs picture{
+    grid-area: b;
+}
+
+.re-arrange-rvs .p-header{
+    grid-area: c;
+}
+
+.re-arrange-rvs:nth-child(4){
     grid-area: d;
 }
 
@@ -329,11 +362,20 @@ footer aside .accent{
         align-self: flex-start;
     }
     
+    /* Left Float */
     .re-arrange{
         grid-template-areas:
             'a a'
             'c c'
             'b d';
+    }
+
+    /* Right Float */
+    .re-arrange-rvs{
+        grid-template-areas:
+            'a a'
+            'c c'
+            'd b';
     }
 }
 
@@ -352,7 +394,8 @@ footer aside .accent{
 /****************************************************/
 
 @media screen and (min-width: 55rem){
-        
+    
+    /* Left Float */
     .re-arrange{
         grid-template-areas:
             'a a'
@@ -361,6 +404,18 @@ footer aside .accent{
     }
 
     .re-arrange .p-header{
+        text-align: start;
+    }
+        
+    /* Right Float */
+    .re-arrange-rvs{
+        grid-template-areas:
+            'a a'
+            'c b'
+            'd b';
+    }
+
+    .re-arrange-rvs .p-header{
         text-align: start;
     }
 }
