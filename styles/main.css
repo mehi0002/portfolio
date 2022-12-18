@@ -191,7 +191,7 @@ button.theme-bg:hover{
 #pawnee img{
     z-index: 2;
     transform:  scale(1.2)
-                translatex(3.4rem);            
+                translatex(-6.6rem);            
 }
 
 #pawnee{
@@ -348,11 +348,11 @@ footer aside .accent{
 
 }
 
-/* 640px breakpoint - hide pawnee */
+/* 640px breakpoint - show pawnee */
 @media screen and (min-width: 40rem){
     #pawnee{
         display: inline-block;
-        width:0;
+        width:25%;
     }
 
     .theme, .theme h1, .theme h2, .theme h3, .theme p{
